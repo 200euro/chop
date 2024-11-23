@@ -1,0 +1,22 @@
+.btn{
+ 
+   max-width: 230px;
+   width: 100%;   
+   padding: 15px;
+   border:  3px solid rgba(0, 0, 0, 0.1);
+   border-radius: 62px;
+   background: transparent;
+   text-align: center;
+
+   margin: 0 auto;
+   display: block;
+
+   transition: 0.3s;
+
+   cursor: pointer;
+
+
+   &:hover{
+      box-shadow: 5px 5px 0 0 black;
+   }
+}
