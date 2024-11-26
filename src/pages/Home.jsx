@@ -9,7 +9,7 @@ const Home = () => {
    
 <section className="home">
   <div className="container">
-    <Category/>
+  <Category/>
   </div>
 </section>
 
