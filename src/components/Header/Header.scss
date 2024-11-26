@@ -1,0 +1,80 @@
+.silki{
+   padding: 50px;
+display: flex;
+justify-content: space-between;
+gap: 50px;
+
+
+
+input{
+   width: 500px;
+   border-radius: 20px;
+}
+}
+
+
+
+.header__wrap{
+   
+   display: flex;
+   justify-content: space-between;
+
+   h1{
+      font-size: 30px;
+   }
+
+   a{
+    
+      text-decoration: none;
+      color: black;
+
+   }
+}
+
+.dropdown{
+display: flex;
+align-items: center;
+position: relative;
+
+
+&:hover{
+   div{
+      opacity: 1;
+      visibility: visible;
+   }
+   img{
+      rotate: 180deg;
+      }
+}
+
+   img{
+      width: 40px;
+      transition: 0.4s;
+
+   }
+   div{
+      top: 35px;
+      left: 0;
+      position: absolute;
+      background-color: #F0f0f0;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+opacity: 0;
+visibility: hidden;
+transition: 0.4s;
+
+      a{
+         border-bottom: solid gray;
+         padding: 4px;
+         font-size: 18px;
+      }
+   }
+}
+
+.shop{
+   display: flex;
+   align-items: center;
+}

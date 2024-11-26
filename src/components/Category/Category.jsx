@@ -7,13 +7,14 @@ import Btn from '../btn/Btn'
 const Category = () => {
   return (
     <>
-       <section className="category">
+       <section className="category" >
    <div className="container">
-
-      <SectionTitle position='center'>NEW ARRIVALS</SectionTitle>
+<div id='selling'>
+    <SectionTitle  position='center'>NEW ARRIVALS</SectionTitle>
+</div>
       
 
-      <div className="category__wrapper">
+      <div className="category__wrapper" >
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120 ' stars='⭐⭐⭐⭐⭐' />
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='3' price='120'   stars='⭐⭐⭐'/>
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='4' price='120' stars='⭐⭐⭐⭐' />
@@ -24,7 +25,14 @@ const Category = () => {
 
 <hr style={{margin: '60px 0'}} />
 
-      <div className="category__wrapper">
+<div id='selling'>
+<SectionTitle  position='center'> Top Selling</SectionTitle>
+
+</div>
+
+
+
+      <div className="category__wrapper" >
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120 ' stars='⭐⭐⭐⭐⭐' />
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='3' price='120'   stars='⭐⭐⭐'/>
  <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='4' price='120' stars='⭐⭐⭐⭐' />
