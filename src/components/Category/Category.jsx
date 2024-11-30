@@ -4,6 +4,11 @@ import SectionTitle from '../SectionTtitle/SectionTitle'
 import Card from '../card/Card'
 import Btn from '../btn/Btn'
 
+
+import Products from '/public/products.json'
+import { Link } from 'react-router-dom'
+
+
 const Category = () => {
   return (
     <>
@@ -15,15 +20,20 @@ const Category = () => {
       
 
       <div className="category__wrapper" >
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120 ' stars='⭐⭐⭐⭐⭐' />
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='3' price='120'   stars='⭐⭐⭐'/>
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='4' price='120' stars='⭐⭐⭐⭐' />
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120'   stars='⭐⭐⭐⭐⭐'/>
+
+       {Products.slice(0, 4).map((card, i)=> (
+        <Link to={`/product/${card.id}`} key={i} className='category__card'>
+        <Card image={card.image} name={card.name} rate='5' price={card.price} stars='⭐⭐⭐⭐⭐' />
+        
+        </Link>
+       ))}
+
+
       </div>
 
       <Btn>View All</Btn>
 
-<hr style={{margin: '60px 0'}} />
+<hr style={{margin: '60px 0'}} /> 
 
 <div id='selling'>
 <SectionTitle  position='center'> Top Selling</SectionTitle>
@@ -33,10 +43,13 @@ const Category = () => {
 
 
       <div className="category__wrapper" >
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120 ' stars='⭐⭐⭐⭐⭐' />
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='3' price='120'   stars='⭐⭐⭐'/>
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='4' price='120' stars='⭐⭐⭐⭐' />
- <Card image={'/card1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='5' price='120'   stars='⭐⭐⭐⭐⭐'/>
+ 
+      {Products.slice(4, 8).map((card, i)=> (
+        <Link to={`/product/${card.id}`} key={i} className='category__card'>
+        <Card image={card.image} name={card.name} rate='5' price={card.price} stars='⭐⭐⭐⭐⭐' />
+        
+        </Link>
+       ))}
       </div>
 
       <Btn>View All</Btn>
