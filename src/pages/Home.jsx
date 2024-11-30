@@ -1,6 +1,7 @@
 import React from 'react'
 import Category from '../components/category/category'
 
+
 const Home = () => {
   return (
    
@@ -9,7 +10,7 @@ const Home = () => {
    
 <section className="home">
   <div className="container">
-  <Category/>
+<Category/>
   </div>
 </section>
 
