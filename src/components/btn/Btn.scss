@@ -1,4 +1,5 @@
 .btn{
+
    max-width: 230px;
    width: 100%;   
    padding: 15px;
@@ -14,6 +15,8 @@
 
    cursor: pointer;
 
+   button{
+   }
 
    &:hover{
       box-shadow: 5px 5px 0 0 black;

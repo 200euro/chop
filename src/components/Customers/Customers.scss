@@ -1,0 +1,25 @@
+.wrap__cust{
+   padding-top: 90px;
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+}
+
+.box__cust{
+   gap: 8px;
+   padding: 20px;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   border: solid rgba(0, 0, 0, 0.14) 1px;
+   border-radius: 25px;
+
+
+   p{
+      font-size: 18px;
+   }
+
+   h4{
+      font-size: 24px;
+   }
+}

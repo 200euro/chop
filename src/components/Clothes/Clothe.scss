@@ -1,0 +1,71 @@
+.clothes__wrapper{
+   margin-top: 30px;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+
+   h1{
+      font-size: 60px;
+      font-weight: 900;
+   }
+
+   p{
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.605);
+   }
+
+
+   @media (max-width: 1000px) {
+     
+
+      img{
+         width: 190%;
+      }
+   }
+}
+
+.clothes{
+   background-color: #F2F0F1;
+}
+
+.clothes__text{
+   gap: 20px;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.clothes__number{
+   display: flex;
+   gap: 20px;
+
+   h2{
+      font-size: 35px;
+      font-weight: 600;
+   }
+
+   p{
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.605);
+
+   }
+}
+
+.btnmain{
+   border-radius: 60px;
+   color: white;
+   background-color: black;
+   width: 200px;
+   height: 50px;
+}
+
+.number__box{
+
+div{
+   border: solid 1px;
+}
+}
+
+.diver{
+   display: flex;
+}

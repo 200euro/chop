@@ -1,58 +1,74 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Header.scss'
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context'
 
 const Header = () => {
+
+  const {isActive, toggleBurger, user, isAuth, logout} = useAppContext()
+ 
   return (
-<>
+    <>
+    <header className="header">
+        <div className="container">
+            <div className='header__wrapper'>
+              <div className="header__wrap">
+              <div className="header__header">
+              <Link to={'/'}><img className='logo__img' src="/SHOP-CO.png" alt="" /></Link>
+                <div className={`header__menu ${isActive ? 'active' : ''}`}>
+                    <Link to={'/sale'} className='dropdown' >
+                    Shop
+                    <img  src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="" />
 
-<header>
-   <div className="container">
-   <div className="header__wrap">
-    <nav className="shop">
-      <Link to={'/'}>
-      <h1>SHOP.CO</h1></Link>
-    </nav>
+                    <div>
+                      <Link to={'/'}>Men</Link>
+                      <Link to={'/'}>Women</Link>
+                      <Link to={'/'}>Kids</Link>
 
-<Link to={'/sale'} className='dropdown' >
+                    </div>
+                    </Link>
 
-Shop
+                    <a href="/#selling">On Sale</a>
+                    <a href="/#arrivals">New Arrivals</a>
+                    <Link to={'/brands'}>Brands</Link>
+            </div>                
+              </div>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/2560px-Arrow-down.svg.png" alt="" />
-    <div>
-      <Link to={'/'}>Man</Link>
-      <Link to={'/'}>Woman</Link>
-      <Link to={'/'}>Kids</Link>
-    </div>
-</Link>
+            <div onClick={toggleBurger} className={`burger ${isActive ? 'active' : ''}`}>
+                <div className='div'></div>
+                <div className='div'></div>
+                <div className='div'></div>
+            </div>                
+              </div>
 
-<div className="silki">
-
-
-
-<a href="/#arrivials">On Sale</a>
-<a href="/#selling">New Arrivals</a>
- <Link to={''}>Brands</Link>
- <Link to={''}>Link</Link>
-   <input className='main__input' type placeholder="Search for products..." />
-
-
-</div>
-
-
-   <img src="" alt="" />
-   <img src="" alt="" />
-</div>
-   </div>
-
-
+                <div className="header__search">
+                  <div className='header__input'>
+                    <img src="/search-icon.svg" alt="" />
+                   {/* <p>Search for products...</p> */}
+                   <input placeholder='Search for products...' type="text" />
+                   </div>
+                  <img src="/ava.png" alt="" />
 
 
+                  {isAuth? (
+                  <div>
+                    <b>{user.username}</b>
+                    <button onClick={logout}>Выйти</button>
+                  </div>
+                  ):(
 
-</header>
+                    <Link to={'/login'}>
+                    <img src="/ava2.png" alt="" />
+                    </Link>
+                  )}
 
-</>
 
+                 
+                </div>
+            </div>
+        </div>
+    </header>
+    </>
   )
 }
 
