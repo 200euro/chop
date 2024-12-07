@@ -14,7 +14,7 @@ const Header = () => {
             <div className='header__wrapper'>
               <div className="header__wrap">
               <div className="header__header">
-              <Link to={'/'}><img className='logo__img' src="/SHOP-CO.png" alt="" /></Link>
+              <Link to={'/'}><img className='logo__img' src="/public/SHOP.CO.png" alt="" /></Link>
                 <div className={`header__menu ${isActive ? 'active' : ''}`}>
                     <Link to={'/sale'} className='dropdown' >
                     Shop
@@ -28,8 +28,8 @@ const Header = () => {
                     </div>
                     </Link>
 
-                    <a href="/#selling">On Sale</a>
-                    <a href="/#arrivals">New Arrivals</a>
+                    <a href=" /#arrivals">On Sale</a>
+                    <a href="/#selling">New Arrivals</a>
                     <Link to={'/brands'}>Brands</Link>
             </div>                
               </div>

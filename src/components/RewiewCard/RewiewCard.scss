@@ -1,0 +1,26 @@
+.rewiew-card{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   color: gray;
+   padding: 28px;
+   border:  solid 1px gray;
+   border-radius: 20px;
+
+   h3{
+      color: black;
+   }
+
+   div{
+
+align-items: center;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.rewiews__wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   gap: 20px;
+}

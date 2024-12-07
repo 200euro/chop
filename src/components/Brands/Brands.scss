@@ -1,8 +1,14 @@
 .box__brands{
-display: flex;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 gap:120px;
    height: 30px;
    width: 100%;
+
+   
+   @media (max-width: 1200px) {
+    grid-template-columns: 1fr ;
+   }
 }
 
 .brands{
@@ -13,5 +19,6 @@ gap:120px;
    gap: 50px;
    height: 100px;
    background-color: black;
+
 
 }

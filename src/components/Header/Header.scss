@@ -8,9 +8,9 @@
    align-items: center;
 }
 
-.header__wrapper {
-   display: flex;
-   gap: 25px;
+.header__wrapper {    
+   display: flex;    
+   gap: 15px;
    justify-content: space-between;
    align-items: center;
 }
@@ -69,8 +69,12 @@
       padding:15px;
       width: 700px;
    border-radius: 45px;
-   background-color: #14080800;
+   background-color: #F0F0F0;
       border: solid 1px#f0f0f000 ;
+
+      @media (max-width: 900px) {
+       
+      }
    }
    width: 500px;
    gap: 10px;
@@ -171,6 +175,7 @@
        div {
            opacity: 1;
            visibility: visible;
+          
        }
 
        img {
