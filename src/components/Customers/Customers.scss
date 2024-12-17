@@ -1,8 +1,18 @@
 .wrap__cust{
+
    padding-top: 90px;
    display: flex;
    justify-content: space-between;
    gap: 30px;
+
+   @media (max-width: 970px) {
+     flex-wrap: wrap;
+   //   text-align: center;
+   flex-direction: column;
+   }
+
+
+   
 }
 
 .box__cust{
@@ -14,12 +24,33 @@
    border: solid rgba(0, 0, 0, 0.14) 1px;
    border-radius: 25px;
 
+   div{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+   }
 
    p{
       font-size: 18px;
+   
    }
 
    h4{
       font-size: 24px;
+
+
+   }
+
+
+
+}
+.customers{
+
+
+   button{
+      margin-top:  40px;
+
+      font-size: 14px;
    }
 }

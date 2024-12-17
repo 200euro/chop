@@ -72,8 +72,8 @@
    background-color: #F0F0F0;
       border: solid 1px#f0f0f000 ;
 
-      @media (max-width: 900px) {
-       
+      @media (max-width: 800px) {
+       display: none;
       }
    }
    width: 500px;
@@ -105,7 +105,7 @@
 .burger {
    width: 40px;
 
-   display: flex;
+   display: flex;   
    flex-direction: column;
    gap: 10px;
 

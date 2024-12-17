@@ -40,9 +40,9 @@ const App = () => {
 
 </Routes>
 
-{/* <SaleSection/>
+<SaleSection/>
 <Custemors/>
-<Account/> */}
+<Account/>
 
 
 

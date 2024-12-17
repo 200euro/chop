@@ -82,9 +82,19 @@ gap: 10px;
 .foot__footer{
    display: flex;
    justify-content: space-between;
+align-items: center;
+
+div{
+   display: flex;
+   flex-wrap: wrap;
 
 
 
+
+   @media (max-width: 650px) {
+     justify-content: center; 
+   }
+}
 
 
 }

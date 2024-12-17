@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -58,11 +59,13 @@ const Footer = () => {
 
 
 
-   <img src="/visa-1.png" alt="" />
-   <img src="/mastercard-2.png" alt="" />
-   <img src="/paypal-3.png" alt="" />
-   <img src="/apple-4.png" alt="" />
-   <img src="/google-5.png" alt="" />
+ <Link><img src="/visa-1.png" alt="" /></Link>  
+ <Link><img src="/mastercard-2.png" alt="" /></Link>  
+ <Link><img src="/paypal-3.png" alt="" /></Link>  
+ <Link><img src="/apple-4.png" alt="" /></Link>  
+ <Link><img src="/google-5.png" alt="" /></Link>  
+
+
    </div>
 </div>
 

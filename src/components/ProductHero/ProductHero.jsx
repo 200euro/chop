@@ -7,6 +7,12 @@ const ProductHero = ({ product  }) => {
    <section className="producthero">
       <div className="container">
          <div className="product__wrap">
+            <div className="product__column">
+   <img src={product.image} alt="" />
+   <img src={product.image} alt="" />
+   <img src={product.image} alt="" />
+            </div>
+
 <div className="product__image">
    <img src={product.image} alt="" />
 </div>
